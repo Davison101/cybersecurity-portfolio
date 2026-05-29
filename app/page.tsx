@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/navbar';
-import { HeroGeometric } from '@/components/ui/shape-landing-hero';
+import { EtherealBeamsHero } from '@/components/ui/ethereal-beams-hero';
 import About from '@/components/about';
 import Skills from '@/components/skills';
 import Projects from '@/components/projects';
@@ -22,12 +22,8 @@ export default function Home() {
 
   return (
     <div className="bg-background text-foreground">
+      <EtherealBeamsHero />
       <Navbar />
-      <HeroGeometric 
-        badge="Cybersecurity Builder"
-        title1="Network Security"
-        title2="& AI Governance"
-      />
       <About />
       <Skills />
       <Projects />
