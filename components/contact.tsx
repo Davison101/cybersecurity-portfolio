@@ -7,27 +7,27 @@ import { SocialIcons } from '@/components/ui/social-icons';
 const contactLinks = [
   {
     label: 'Email',
-    value: 'hello@davisonmapiza.com',
+    value: 'dmapiza14@gmail.com',
     icon: Mail,
-    href: 'mailto:hello@davisonmapiza.com',
+    href: 'mailto:dmapiza14@gmail.com',
   },
   {
     label: 'LinkedIn',
-    value: '/in/davisonmapiza',
+    value: 'Davison Mapiza',
     icon: Linkedin,
-    href: 'https://linkedin.com/in/davisonmapiza',
+    href: 'https://linkedin.com/in/davison-mapiza',
   },
   {
     label: 'GitHub',
-    value: '@davisonmapiza',
+    value: 'Davison101',
     icon: Github,
-    href: 'https://github.com/davisonmapiza',
+    href: 'https://github.com/Davison101',
   },
   {
-    label: 'WhatsApp',
-    value: '+1 (555) 123-4567',
+    label: 'WhatsApp & Phone',
+    value: '+263 976 235 760',
     icon: MessageCircle,
-    href: 'https://wa.me/15551234567',
+    href: 'https://wa.me/263976235760',
   },
 ];
 
