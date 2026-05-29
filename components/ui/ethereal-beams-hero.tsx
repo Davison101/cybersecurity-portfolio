@@ -473,31 +473,30 @@ export function EtherealBeamsHero() {
           {/* Badge */}
           <div className="mb-8 inline-flex items-center rounded-full bg-white/5 backdrop-blur-xl border border-white/10 px-4 py-2 text-sm text-white/90">
             <Star className="mr-2 h-4 w-4 text-white" />
-            {"Built with precision and care"}
+            {"Welcome to my security research journey"}
           </div>
 
           {/* Main Heading */}
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Ethereal{" "}
-            <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-              Beams
-            </span>{" "}
-            Hero
+            Hi, I&apos;m{" "}
+            <span className="bg-gradient-to-r from-cyan-300 via-cyan-200 to-blue-300 bg-clip-text text-transparent">
+              Davison
+            </span>
           </h1>
 
           {/* Subtitle */}
           <p className="mb-10 text-lg leading-8 text-white/80 sm:text-xl lg:text-2xl max-w-3xl mx-auto">
-            A mesmerizing hero section with animated 3D light beams. Perfect for creating a bold first impression.
+            A cybersecurity builder exploring network security, AI governance, and secure systems design. Let&apos;s build something secure together.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="shadow-2xl shadow-white/25 font-semibold">
-              Explore More
+              Explore My Work
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline" size="lg" className="font-semibold bg-transparent">
-              Learn More
+              Get in Touch
             </Button>
           </div>
         </div>
