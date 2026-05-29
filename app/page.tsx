@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/navbar';
-import Hero from '@/components/hero';
+import { HeroGeometric } from '@/components/ui/shape-landing-hero';
 import About from '@/components/about';
 import Skills from '@/components/skills';
 import Projects from '@/components/projects';
@@ -23,7 +23,11 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground">
       <Navbar />
-      <Hero />
+      <HeroGeometric 
+        badge="Cybersecurity Builder"
+        title1="Network Security"
+        title2="& AI Governance"
+      />
       <About />
       <Skills />
       <Projects />
