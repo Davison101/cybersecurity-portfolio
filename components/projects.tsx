@@ -60,10 +60,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`p-8 rounded-lg border border-border bg-card/50 hover:border-accent/50 transition-all duration-500 ${
-                visibleItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
+              className="p-8 rounded-lg border border-border bg-card/50 hover:border-accent/50 transition-all duration-500 opacity-100 translate-y-0"
             >
               <h3 className="text-xl font-bold text-foreground mb-4">{project.title}</h3>
 

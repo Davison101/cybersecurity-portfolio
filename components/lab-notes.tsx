@@ -47,10 +47,7 @@ export default function LabNotes() {
           {insights.map((insight, index) => (
             <div
               key={insight.title}
-              className={`p-6 rounded-lg border border-border bg-card/50 hover:border-accent/50 transition-all duration-500 ${
-                visibleItems[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              className="p-6 rounded-lg border border-border bg-card/50 hover:border-accent/50 transition-all duration-500 opacity-100 translate-y-0"
             >
               <h3 className="font-bold text-foreground mb-3">{insight.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{insight.excerpt}</p>

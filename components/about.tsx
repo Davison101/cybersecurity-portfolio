@@ -38,21 +38,21 @@ export default function About() {
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">About</h2>
 
         <div className="space-y-6 text-muted-foreground leading-relaxed">
-          <p className={`transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <p>
             I&apos;m entering my final year at ZUCT with a focus on practical security implementation rather than theory alone. My work centers on designing secure network architectures, configuring enterprise firewalls, and implementing security governance workflows that scale.
           </p>
 
-          <p className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <p>
             My foundation is in Cisco networking—VLANs, Layer 3 switching, ASA firewalls, DMZ segmentation, and access control lists. I approach each project as a system: understanding threat models, designing layered defenses, and documenting decisions for maintainability. Security isn&apos;t just policy; it&apos;s architecture.
           </p>
 
-          <p className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <p>
             I&apos;m increasingly focused on AI security—adversarial machine learning, LLM governance, deterministic policy enforcement, and secure mediation layers. As AI systems become infrastructure, the questions change: How do we enforce safety deterministically? How do we audit AI decisions? How do we build governance that scales?
           </p>
         </div>
 
         {/* Identity Tags */}
-        <div className={`flex flex-wrap gap-3 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className="flex flex-wrap gap-3">
           {tags.map((tag) => (
             <span
               key={tag}

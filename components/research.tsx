@@ -51,7 +51,7 @@ export default function Research() {
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Research Direction</h2>
-          <p className={`text-muted-foreground text-lg transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <p className="text-muted-foreground text-lg">
             My academic work focuses on the intersection of systems thinking and emerging security challenges.
           </p>
         </div>
@@ -60,10 +60,7 @@ export default function Research() {
           {researchAreas.map((area, index) => (
             <div
               key={area.title}
-              className={`p-6 rounded-lg border border-border bg-background/50 hover:border-accent/50 transition-all duration-500 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              className="p-6 rounded-lg border border-border bg-background/50 hover:border-accent/50 transition-all duration-500 opacity-100 translate-y-0"
             >
               <h3 className="font-bold text-foreground mb-2">{area.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{area.description}</p>
