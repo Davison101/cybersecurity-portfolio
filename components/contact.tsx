@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { Mail, Linkedin, Github, MessageCircle } from 'lucide-react';
+import { SocialIcons } from '@/components/ui/social-icons';
 
 const contactLinks = [
   {
@@ -61,35 +62,41 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {contactLinks.map((link, index) => {
-            const Icon = link.icon;
-            return (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith('http') ? '_blank' : undefined}
-                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className={`p-6 rounded-lg border border-border bg-card/50 hover:border-accent hover:bg-card transition-all duration-300 group ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="flex items-start justify-between">
-                  <div className="space-y-2">
-                    <p className="text-sm text-muted-foreground font-mono uppercase tracking-wide">
-                      {link.label}
-                    </p>
-                    <p className="text-foreground font-medium">{link.value}</p>
+        <div className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-6">
+            {contactLinks.map((link, index) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith('http') ? '_blank' : undefined}
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className={`p-6 rounded-lg border border-border bg-card/50 hover:border-accent hover:bg-card transition-all duration-300 group ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                  }`}
+                  style={{ transitionDelay: `${index * 100}ms` }}
+                >
+                  <div className="flex items-start justify-between">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground font-mono uppercase tracking-wide">
+                        {link.label}
+                      </p>
+                      <p className="text-foreground font-medium">{link.value}</p>
+                    </div>
+                    <Icon
+                      size={20}
+                      className="text-accent group-hover:scale-110 transition-transform"
+                    />
                   </div>
-                  <Icon
-                    size={20}
-                    className="text-accent group-hover:scale-110 transition-transform"
-                  />
-                </div>
-              </a>
-            );
-          })}
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="flex justify-center pt-8 border-t border-border">
+            <SocialIcons />
+          </div>
         </div>
       </div>
     </section>
