@@ -24,7 +24,7 @@ const contactLinks = [
   },
   {
     label: 'WhatsApp & Phone',
-    value: '+263 976 235 760',
+    value: '+260 976 235 760',
     icon: MessageCircle,
     href: 'https://wa.me/263976235760',
   },
